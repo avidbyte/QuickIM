@@ -12,7 +12,6 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 
 /**
  * @author Aaron
- * @date 2023/4/12 12:33
  * @since 1.0
  */
 @ChannelHandler.Sharable
