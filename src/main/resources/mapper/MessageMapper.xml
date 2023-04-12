@@ -1,0 +1,18 @@
+<mapper namespace="com.starlight.quickim.mapper">
+    <insert id="insertMessage" parameterType="com.example.model.Message">
+        INSERT INTO message(user_id, content, create_time)
+        VALUES (#{userId}, #{content}, #{createTime})
+    </insert>
+
+    <select id="selectMessages" parameterType="map" resultType="com.example.model.Message">
+        SELECT * FROM message
+        WHERE user_id = #{userId}
+        ORDER BY create_time DESC
+        LIMIT #{start}, #{limit}
+    </select>
+
+    <select id="selectMessageCount" parameterType="map" resultType="int">
+        SELECT COUNT(*) FROM message
+        WHERE user_id = #{userId}
+    </select>
+</mapper>
