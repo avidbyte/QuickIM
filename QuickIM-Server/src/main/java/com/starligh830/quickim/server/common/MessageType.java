@@ -1,4 +1,4 @@
-package com.starlight.quickim.common;
+package com.starligh830.quickim.server.common;
 
 /**
  *  消息类型枚举类

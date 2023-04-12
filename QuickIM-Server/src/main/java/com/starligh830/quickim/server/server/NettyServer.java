@@ -1,4 +1,4 @@
-package com.starlight.quickim.server;
+package com.starligh830.quickim.server.server;
 
 /**
  * @author Aaron

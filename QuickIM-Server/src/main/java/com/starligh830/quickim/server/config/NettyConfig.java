@@ -1,4 +1,4 @@
-package com.starlight.quickim.config;
+package com.starligh830.quickim.server.config;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;

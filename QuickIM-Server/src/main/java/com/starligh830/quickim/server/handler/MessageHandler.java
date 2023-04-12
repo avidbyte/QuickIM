@@ -1,7 +1,8 @@
-package com.starlight.quickim.handler;
+package com.starligh830.quickim.server.handler;
 
-import com.starlight.quickim.common.Message;
-import com.starlight.quickim.common.MessageType;
+
+import com.starligh830.quickim.server.common.Message;
+import com.starligh830.quickim.server.common.MessageType;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
