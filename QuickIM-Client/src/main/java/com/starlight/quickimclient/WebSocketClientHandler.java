@@ -35,7 +35,7 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
-package com.starlight830.quickimclient;
+package com.starlight.quickimclient;
 
 import io.netty.channel.*;
 import io.netty.handler.codec.http.FullHttpResponse;

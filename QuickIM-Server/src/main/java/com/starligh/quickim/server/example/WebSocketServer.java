@@ -13,9 +13,9 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.starligh830.quickim.server.example;
+package com.starligh.quickim.server.example;
 
-import com.starligh830.quickim.server.util.ServerUtil;
+import com.starligh.quickim.server.util.ServerUtil;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;

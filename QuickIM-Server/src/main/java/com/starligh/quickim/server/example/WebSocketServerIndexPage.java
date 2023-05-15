@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.starligh830.quickim.server.example;
+package com.starligh.quickim.server.example;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

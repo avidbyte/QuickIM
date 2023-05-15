@@ -1,4 +1,4 @@
-package com.starligh830.quickim.server.common;
+package com.starligh.quickim.server.common;
 
 
 import java.io.Serializable;

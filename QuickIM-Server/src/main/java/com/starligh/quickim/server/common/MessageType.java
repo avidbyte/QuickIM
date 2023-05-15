@@ -1,8 +1,8 @@
-package com.starligh830.quickim.server.common;
+package com.starligh.quickim.server.common;
 
 /**
  *  消息类型枚举类
- * @author aaron
+ * @author Aaron
  */
 public enum MessageType {
 

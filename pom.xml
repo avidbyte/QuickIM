@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.starlight830</groupId>
+    <groupId>com.starlight</groupId>
     <artifactId>QuickIM-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -24,6 +24,7 @@
     <modules>
         <module>QuickIM-Server</module>
         <module>QuickIM-Client</module>
+        <module>QuickIM-Example</module>
     </modules>
 
 
@@ -79,6 +80,13 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.83</version>
             </dependency>
 
         </dependencies>

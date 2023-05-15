@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.starlight830</groupId>
+        <groupId>com.starlight</groupId>
         <artifactId>QuickIM-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
 
-    <groupId>com.starligh830</groupId>
+    <groupId>com.starligh</groupId>
     <artifactId>QuickIM-Server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>QuickIM-Server</name>
@@ -38,6 +38,12 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-handler</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
         </dependency>
 
     </dependencies>

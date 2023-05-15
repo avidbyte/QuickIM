@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.starligh830.quickim.server.example;
+package com.starligh.quickim.server.example;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -24,6 +24,7 @@ import java.util.Locale;
 
 /**
  * Echoes uppercase content of text frames.
+ * @author Aaron
  */
 public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocketFrame> {
 
@@ -34,6 +35,7 @@ public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocket
         if (frame instanceof TextWebSocketFrame) {
             // Send the uppercase string back.
             String request = ((TextWebSocketFrame) frame).text();
+            System.out.println(request);
             ctx.channel().writeAndFlush(new TextWebSocketFrame(request.toUpperCase(Locale.US)));
         } else {
             String message = "unsupported frame type: " + frame.getClass().getName();

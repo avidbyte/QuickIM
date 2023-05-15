@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.starligh830.quickim.server.example;
+package com.starligh.quickim.server.example;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
@@ -27,6 +27,7 @@ import static io.netty.handler.codec.http.HttpResponseStatus.*;
 
 /**
  * Outputs index page content.
+ * @author Aaron
  */
 public class WebSocketIndexPageHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 

@@ -13,8 +13,10 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.starligh830.quickim.server.example;
+package com.starligh.quickim.server.server;
 
+import com.starligh.quickim.server.example.WebSocketIndexPageHandler;
+import com.starligh.quickim.server.handler.ChatServerHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -26,13 +28,13 @@ import io.netty.handler.ssl.SslContext;
 
 /**
  */
-public class WebSocketServerInitializer extends ChannelInitializer<SocketChannel> {
+public class WebSocketServerInitializer2 extends ChannelInitializer<SocketChannel> {
 
     private static final String WEBSOCKET_PATH = "/websocket";
 
     private final SslContext sslCtx;
 
-    public WebSocketServerInitializer(SslContext sslCtx) {
+    public WebSocketServerInitializer2(SslContext sslCtx) {
         this.sslCtx = sslCtx;
     }
 
@@ -47,6 +49,6 @@ public class WebSocketServerInitializer extends ChannelInitializer<SocketChannel
         pipeline.addLast(new WebSocketServerCompressionHandler());
         pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
         pipeline.addLast(new WebSocketIndexPageHandler(WEBSOCKET_PATH));
-        pipeline.addLast(new WebSocketFrameHandler());
+        pipeline.addLast(new ChatServerHandler());
     }
 }
